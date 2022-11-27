@@ -1,0 +1,10 @@
+<% for(let i = 0; i < users.length; i++) { %>
+    <tr>
+        <td><%= i + 1 %></td>
+        <td><%= users[i].username %></td>
+        <td><%= users[i].birth_date %></td>
+        <td><%= users[i].address %></td>
+        <td><%= users[i].email %></td>
+        <td><%= users[i].role %></td>
+    </tr>
+<% } %>

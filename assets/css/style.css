@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    height: 100vh;
+    background-image: url(../img/nak.png.jpg);
+    background-size: cover;;
+} */
+
+
+.user-avarta{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.form__content{
+    width: 30%;
+    margin: 0 auto;
+    border: 1.5px solid green;
+    padding: 20px 20px;
+}
+
+td{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

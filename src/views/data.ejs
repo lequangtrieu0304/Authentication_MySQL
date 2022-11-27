@@ -1,0 +1,48 @@
+<%- include('includes/header') %>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Home</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            <img src="https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-6/275903748_157422890039773_4055452315082057856_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=aVWxv7MCEC8AX-Frixv&_nc_ht=scontent.fhan2-5.fna&oh=00_AT928HuuPL0F19L2ZGTFkx5FGrRkJ-okVISjtheNEvqYww&oe=6341D469"
+                                alt="" class="user-avarta">
+                            Quang Triệu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!-- <li><a class="dropdown-item" href="/user-management/">Quản Lý Người Dùng</a></li> -->
+                            <li><a class="dropdown-item" href="/register/add-user/">Sign up</a></li>
+                            <li><a class="dropdown-item" href="/logout/">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-5">
+        <table class="table table-bordered">
+            <thead class="bg-secondary text-center">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">username</th>
+                  <th scope="col">brith_date</th>
+                  <th scope="col">address</th>
+                  <th scope="col">email</th>
+                  <th scope="col">role</th>
+                </tr>
+            </thead>
+
+          <tbody class="text-center">
+
+            <%- include('includes/show') %>
+
+           </tbody>
+        </table>
+       
+    </div>
+
+<%- include('includes/footer') %>
